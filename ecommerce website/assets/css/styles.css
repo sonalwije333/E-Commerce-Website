@@ -130,10 +130,22 @@ input {
   gap: 1.5rem;
 }
 
+.section{
+  padding-block: 2rem;
+}
 .section--lg{
   padding-block: 4rem;
 }
 
+.section__title{
+  font-size: var(--h4-font-size);
+  margin-bottom: 1.5rem;
+ 
+}
+
+.section__title span{
+  color: var(--first-color);
+}
 
 /*=============== HEADER & NAV ===============*/
 .header__top{
@@ -319,12 +331,119 @@ input {
    color: var(--first-color);
 }
 /*=============== CATEGORIES ===============*/
+.categories{
+    overflow: hidden;
+}
+ .category__item{
+  text-align: center;
+  border: 1px solid var(--border-color);
+  padding: 0.625rem .625rem 1.25rem;
+ border-radius: 1.25rem;
+ }
+
+ .caregory__img{
+  border-radius: 0.75rem;
+  margin-bottom:1.25rem;
+ }
+
+ .category__title{
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+
 
 /* Swiper class */
+/*
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  content: '';
+}
+
+.swiper{
+  overflow: initial;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  top: -1.875rem;
+  background-color: var(--first-color-alt);
+  border: 1px solid var(--border-color);
+  width: 25px;
+  border-radius: 50%;
+  color: var(--first-color);
+  font-size: var(--tiny-font-size);
+ 
+}
+
+.swiper-button-prev{
+  left: initial;
+  right: 2.5rem;
+}
+
+.swiper-button-next{
+  right:0; 
+
+
+} 
+*/
+
+/* Swiper class */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper {
+  overflow: initial;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: -1.5rem; /* Adjust button position */
+  background-color: var(--first-color-alt);
+  border: 1px solid var(--border-color);
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  color: var(--first-color);
+  font-size: var(--tiny-font-size);
+  line-height: 30px; /* Ensure text is vertically centered */
+  z-index: 10; 
+}
+
+.swiper-button-prev {
+  left: initial;
+  right: 3.5rem; 
+}
+
+.swiper-button-next {
+  right: 0; 
+}
+
+
 
 /*=============== PRODUCTS ===============*/
+.tab__btns{
+  display: flex;
+  column-gap: 0.75rem;
+
+}
+
+.tab__btn{
+  background-color: var(--container-color) ;
+  color: var(--title-color);
+  padding: 1rem 1.25rem .875rem;
+  border-radius: 0.25rem;
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-600);
+  cursor: pointer;
+}
 
 /* Active Tab */
+.tab__btn .active-tab{
+  color: var(--first-color);
+  background-color: var(--second-color);
+}
 
 /* Product Hover */
 

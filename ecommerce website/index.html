@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+  
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -110,25 +113,116 @@
 
                   <img src="assets/img/home-img.png" alt="" class="home__img">
                  </div>
-            
-
-
-
-
-
-
-
-
-
       </section>
 
-
+ 
 
       <!--=============== CATEGORIES ===============-->
-      <section class="categories"></section>
+      <section class="categories container section">
+  
+     <h3 class="section__title"> <span>Popular</span> Categories</h3>
+     <div class="categories__container swiper">
+         <div class="swiper-wrapper">
+           <a href="shop.html" class="category__item swiper-slide">
+               <img src="assets/img/category-1.jpg" alt="" class="category__img">
+
+               <h3 class="category__title">T-shirt</h3>
+           </a>
+
+           <a href="shop.html" class="category__item swiper-slide">
+            <img src="assets/img/category-2.jpg" alt="" class="category__img">
+
+            <h3 class="category__title">Bags</h3>
+        </a>
+
+        <a href="shop.html" class="category__item swiper-slide">
+          <img src="assets/img/category-3.jpg" alt="" class="category__img">
+
+          <h3 class="category__title">Sandals</h3>
+      </a>
+            
+      <a href="shop.html" class="category__item swiper-slide">
+        <img src="assets/img/category-4.jpg" alt="" class="category__img">
+
+        <h3 class="category__title">Scarf Cap </h3>
+    </a>
+       
+      <a href="shop.html" class="category__item swiper-slide">
+      <img src="assets/img/category-5.jpg" alt="" class="category__img">
+
+      <h3 class="category__title">Shoes</h3>
+      </a>
+
+      <a href="shop.html" class="category__item swiper-slide">
+        <img src="assets/img/category-6.jpg" alt="" class="category__img">
+
+        <h3 class="category__title">Pillocase</h3>
+    </a>
+
+    <a href="shop.html" class="category__item swiper-slide">
+      <img src="assets/img/category-7.jpg" alt="" class="category__img">
+
+      <h3 class="category__title">Jumpsuit</h3>
+  </a>
+
+  <a href="shop.html" class="category__item swiper-slide">
+    <img src="assets/img/category-8.jpg" alt="" class="category__img">
+
+    <h3 class="category__title">Hats</h3>
+</a>
+
+
+
+        
+
+</div>
+     <div class="swiper-button-next"></div>
+     <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="categories__container swiper">
+                <div class="swiper-wrapper">
+                </div>
+         <div class="swiper-button-next">
+             <i class="chevron-forward-sharp"></i>
+         </div>
+          
+        <div class="swiper-button-prev">
+              <i class="chevron-back-sharp"></i>  
+        </div>  
+
+        </div> 
+      </section>
 
       <!--=============== PRODUCTS ===============-->
-      <section class="products"></section>
+      <section class="products">
+        <div class="tab__btns">
+          <span class="tab__btn active-tab">Featured</span>
+          <span class="tab__btn active-tab">Popular</span>
+          <span class="tab__btn active-tab">New added</span>
+        </div>
+        <div class="tab__items">
+          <div class="tab__item">
+            <div class="products__container grid">
+                 <div class="product__item">
+                  <div class="product__banner">
+                   <a href="details.html" class="product__images">
+                      <img src="assets/img/product-1-1.jpg" alt="" class="product__img default">
+                      <img src="assets/img/product-1-2.jpg" alt="" class="product__img hover">
+
+                   </a>
+                   <div class="product__actions">
+                        <a href="#" class="action__btn">
+                          <i class="ri-eye-line"></i>
+                        </a>
+                   </div>
+                 </div>
+            </div>
+          </div> 
+          </div>
+
+        </div>
+    </section>
 
       <!--=============== DEALS ===============-->
       <section class="deals"></section>
@@ -147,9 +241,11 @@
     <footer class="footer"></footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
+
+  
   </body>
 </html>
